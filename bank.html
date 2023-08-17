@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="my-10">
+            <h1 class="text-5xl	text-center">Let's Go some <span class="font-bold	text-purple-700	">Moooooooooney</span></h1>
+    </header>
+    <section>
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+            <div class="bg-pink-900	text-white p-14 rounded-lg">
+                <h2 class="text-3xl">Deposit</h2>
+                <p class="text-4xl">$<span id="deposit-total">00</span></p>
+            </div>
+            <div class="bg-fuchsia-800	text-white p-14 rounded-lg">
+                <h2 class="text-3xl">Withdraw</h2>
+                <p class="text-4xl">$<span id="withdraw-total">00</span></p>
+            </div>
+            <div class="bg-purple-800 text-white p-14 rounded-lg">
+                <h2 class="text-3xl">Balance</h2>
+                <p class="text-4xl">$<span id="balance-total">1240</span></p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-10">
+            <div class="bg-pink-500	 p-14 space-y-5 rounded-lg">
+                <h2 class="text-3xl text-white">Please Deposit</h2>
+                <input class="block w-9/12 p-2" type="text" name="" id="deposit-field" placeholder="$ you want to deposit">
+                <button id="btn-deposit" class="bg-pink-900 px-8 py-3 text-white hover:bg-sky-700 rounded-lg">Deposit</button>
+            </div>
+            <div class="bg-teal-600	p-14 space-y-5 rounded-lg">
+                <h2 class="text-3xl text-white"> please Withdraw</h2>
+                <input class="block w-9/12 p-2" type="text" name="" id="withdraw-field" placeholder="$ you want to withdraw">
+                <button id="btn-withdraw" class="bg-fuchsia-800	 px-8 py-3 text-white hover:bg-sky-800 rounded-lg">Withdraw</button>
+            </div>
+        </div>
+    </section>
+    <script src="deposit.js"></script>
+    <script src="withdrow.js"></script>
+</body>
+</html>
